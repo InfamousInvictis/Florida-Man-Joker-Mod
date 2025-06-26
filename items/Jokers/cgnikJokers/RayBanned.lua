@@ -1,7 +1,7 @@
 local RayBanned_atlas = {
 	object_type = "Atlas", 
-	key = "FloridaJawsome", 
-	path = "jawsome.png", 
+	key = "RayBanned_atlas", 
+	path = "RayBanned.png", 
 	px = 71, 
 	py = 95
 }
@@ -19,7 +19,7 @@ local RayBanned = {
         }
     },
     rarity = 1,
-    --atlas = 'FloridaJawsome',
+    atlas = 'RayBanned_atlas',
 	pos = { x = 0, y = 0 },
     cost = 6,
     unlocked = true,
@@ -109,4 +109,4 @@ local RayBanned = {
         end
     end
 }
-return { name = {"Jokers"}, items = {RayBanned} }
+return { name = {"Jokers"}, items = {RayBanned_atlas, RayBanned} }

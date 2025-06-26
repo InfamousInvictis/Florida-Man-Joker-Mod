@@ -20,6 +20,9 @@ local function collect_item_files(base_fs, rel, out)
     end
 end
 
+assert(SMODS.load_file('Utils/functions.lua'))()
+assert(SMODS.load_file('Utils/draw.lua'))()
+
 local files = {}
 collect_item_files(mod_path.."Items", "Items", files)
 
