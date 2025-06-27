@@ -1,0 +1,49 @@
+[manifest]
+version = "1.0.0"
+dump_lua = true
+priority = 214748364
+
+[[patches]] #G.Game.current_round
+[patches.pattern]
+target = 'game.lua'
+pattern = '''
+reroll_cost_increase = 0,
+'''
+position = 'after'
+match_indent = true
+payload = '''
+
+'''
+
+[[patches]]  
+[patches.pattern]
+target = 'game.lua'
+pattern = '''
+reset_castle_card()
+'''
+position = 'after'
+match_indent = true
+payload = '''
+update_flor_seagull_splat()
+'''
+
+[[patches]] #G.GAME 
+[patches.pattern]
+target = 'game.lua'
+pattern = '''
+unused_discards = 0,'''
+position = 'after'
+match_indent = true 
+payload = '''
+
+'''
+
+[[patches]] #Colors
+[patches.pattern]
+target = 'functions/misc_functions.lua'
+pattern = '''enhanced = G.C.SECONDARY_SET.Enhanced'''
+position = 'before'
+payload = '''
+
+'''
+match_indent = true

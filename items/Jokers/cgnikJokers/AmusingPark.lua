@@ -1,7 +1,7 @@
 local AmusingPark_atlas = {
 	object_type = "Atlas", 
-	key = "FloridaJawsome", 
-	path = "jawsome.png", 
+	key = "AmusingPark_atlas", 
+	path = "AmusingPark.png", 
 	px = 71, 
 	py = 95
 }
@@ -19,7 +19,7 @@ local AmusingPark = {
         }
     },
     rarity = 2,
-    --atlas = 'FloridaJawsome',
+    atlas = 'AmusingPark_atlas',
 	pos = { x = 0, y = 0 },
     cost = 7,
     unlocked = true,
@@ -94,4 +94,4 @@ local AmusingPark = {
         end
     end
 }
-return { name = {"Jokers"}, items = {AmusingPark} }
+return { name = {"Jokers"}, items = {AmusingPark_atlas, AmusingPark} }

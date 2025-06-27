@@ -1,7 +1,7 @@
 local ToeJimbo_atlas = {
 	object_type = "Atlas", 
-	key = "FloridaJawsome", 
-	path = "jawsome.png", 
+	key = "ToeJimbo_atlas", 
+	path = "ToeJimbo.png", 
 	px = 71, 
 	py = 95
 }
@@ -14,9 +14,9 @@ local ToeJimbo = {
         extra = {
             dollars = 10
         }
-    }
+    },
     rarity = 2,
-    --atlas = 'FloridaJawsome',
+    atlas = 'ToeJimbo_atlas',
 	pos = { x = 0, y = 0 },
     cost = 7,
     unlocked = true,
@@ -44,4 +44,4 @@ local ToeJimbo = {
         end
     end
 }
-return { name = {"Jokers"}, items = { ToeJimbo} }
+return { name = {"Jokers"}, items = {ToeJimbo_atlas, ToeJimbo} }
