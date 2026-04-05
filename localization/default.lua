@@ -171,6 +171,17 @@ return {
 				    "{B:1,C:white,s:0.75,E:1}Idea: InfamousInvictis"
 			    },
 			},
+			j_flor_PolyTheParrot = {
+				name = "Poly the Parrot",
+			        text = {
+				        "Adds {C:mult}+#1#{} Mult before a",
+				        "{C:dark_edition}Polychrome{} card or {C:attention}Joker{} activates.",
+				        "{s:0.5} ",
+				        "{B:1}{C:white}{s:0.7}{E:1}Code: MiniTigra",
+						"{B:1}{C:white}{s:0.7}{E:1}Art: Thunderbear",
+						"{B:1}{C:white}{s:0.7}{E:1}Idea: InfamousInvictis"
+			        },
+			},
 		}
 	}
 }
