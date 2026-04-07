@@ -1,23 +1,18 @@
 local PolyTheParrot_atlas = {
-	object_type = "Atlas", 
-	key = "PolyTheParrot", 
-	path = "PolyTheParrot.png", 
-	px = 71, 
-	py = 95
+    object_type = "Atlas", 
+    key = "PolyTheParrot", 
+    path = "PolyTheParrot.png", 
+    px = 71, py = 95
 }
 
 local PolyTheParrot = {
     object_type = "Joker",
     order = 5,
     key = "PolyTheParrot",
-    config = { 
-        extra = {
-            mult = 7
-        }
-    },
+    config = { extra = { mult = 7 } },
     rarity = 2,
     atlas = 'PolyTheParrot',
-	pos = { x = 0, y = 0 },
+    pos = { x = 0, y = 0 },
     cost = 6,
     unlocked = true,
     discovered = false,
@@ -59,4 +54,5 @@ local PolyTheParrot = {
         end
     end
 }
+
 return { name = {"Jokers"}, items = {PolyTheParrot_atlas, PolyTheParrot} }

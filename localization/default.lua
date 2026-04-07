@@ -172,27 +172,27 @@ return {
 			    },
 			},
 			j_flor_PolyTheParrot = {
-				name = "Poly the Parrot",
-			        text = {
-				        "Adds {C:mult}+#1#{} Mult before a",
-				        "{s:0.5} ",
-			        },
-			},
-				name = "The Mighty Manatee!",
-				text = {
-					"give {X:mult,C:white}x#1#{} Mult instead of {X:mult,C:white}x1.5{}",
-					"{s:0.5} ",
-				},
-			},
+                name = "Poly the Parrot",
+                text = {
+                    "Adds {C:mult}+#1#{} Mult before a",
                     "{C:attention}Polychrome{} {C:attention}Card/Joker{} activates",
+                    "{s:0.5} {}",
                     "{B:1,C:white,s:0.75,E:1}Code: MiniTigra",
                     "{B:1,C:white,s:0.75,E:1}Art: Thunderbear",
                     "{B:1,C:white,s:0.75,E:1}Idea: InfamousInvictis"
+                },
+            },
             j_flor_mighty_manatee = {
+                name = "The Mighty Manatee!",
+                text = {
                     "{C:attention}Polychrome{} cards and {C:attention}Jokers{}",
+                    "give {X:mult,C:white}x#1#{} Mult instead of {X:mult,C:white}x1.5{}",
+                    "{s:0.5} {}",
                     "{B:1,C:white,s:0.75,E:1}Code: MiniTigra",
                     "{B:1,C:white,s:0.75,E:1}Art: Thunderbear",
                     "{B:1,C:white,s:0.75,E:1}Idea: InfamousInvictis"
+                },
+            },
 		}
 	}
 }

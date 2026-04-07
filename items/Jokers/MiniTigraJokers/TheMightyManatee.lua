@@ -16,7 +16,7 @@ local TheMightyManatee = {
     atlas = 'manatee_atlas',
     cost = 8,
     unlocked = true,
-    discovered = false,
+    discovered = true,
     blueprint_compat = false,
 
     loc_vars = function(self, info_queue, card)
@@ -32,9 +32,16 @@ local TheMightyManatee = {
             card.children.floating_sprite:draw_shader('dissolve', nil, nil, nil, card.children.center, cur_soul_pos)
         end
     end,
+
+    load = function(self, card, card_table)
+        if not card.children.floating_sprite then
+            card.children.floating_sprite = Sprite(card.T.x, card.T.y, card.T.w, card.T.h, G.ASSET_ATLAS[self.atlas] or G.ASSET_ATLAS['Base'], self.soul_pos)
+            card.children.floating_sprite.role.draw_major = card
+            card.children.floating_sprite.states.hover.can = false
+            card.children.floating_sprite.states.click.can = false
         end
     end,
-
+  
     calculate = function(self, card, context)
         if (context.individual and (context.cardarea == G.play or context.cardarea == G.jokers)) then
             if context.other_card.edition and context.other_card.edition.polychrome then
