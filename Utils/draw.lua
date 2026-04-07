@@ -1,8 +1,4 @@
 G.shared_flor_extra_sprites = {}
---manatee is rendered in layers for some reason? so I'm loading the manatee sprite here so that it doesn't show only the background in the Collection view
-function SMODS.current_mod.init()
-    G.shared_flor_extra_sprites["MightyManatee"] = Sprite(0,0,G.CARD_W,G.CARD_H,G.ASSET_ATLAS["flor_MightyManatee"], {x=0,y=0})
-end
 
 function SMODS.current_mod.reset_game_globals(run_start)
 	if run_start then

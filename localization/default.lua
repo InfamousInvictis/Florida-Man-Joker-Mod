@@ -151,7 +151,7 @@ return {
 				name = "Key Lime Pie",
 			    text = {
 					"If all {C:attention}consumable{} slots are filled",
-					"for {C:attention}#1#{} rounds, {C:red}destroy{} all cards and",
+					"for {C:attention}#1#{} rounds, {C:red}destroys{} all cards and",
 					"receive triple their {C:money}sell value",
 					"{C:inactive}(Currently {C:attention}#2#{C:inactive}/{C:attention}#1#{C:inactive})",
 				    "{s:0.5} {}",
@@ -175,24 +175,24 @@ return {
 				name = "Poly the Parrot",
 			        text = {
 				        "Adds {C:mult}+#1#{} Mult before a",
-				        "{C:dark_edition}Polychrome{} card or {C:attention}Joker{} activates.",
 				        "{s:0.5} ",
-				        "{B:1}{C:white}{s:0.7}{E:1}Code: MiniTigra",
-						"{B:1}{C:white}{s:0.7}{E:1}Art: Thunderbear",
-						"{B:1}{C:white}{s:0.7}{E:1}Idea: InfamousInvictis"
 			        },
 			},
-			j_flor_TheMightyManatee = {
 				name = "The Mighty Manatee!",
 				text = {
-					"{C:dark_edition}Polychrome{} cards and {C:attention}Jokers{}",
 					"give {X:mult,C:white}x#1#{} Mult instead of {X:mult,C:white}x1.5{}",
 					"{s:0.5} ",
-					"{B:1}{C:white}{s:0.7}{E:1}Code: MiniTigra",
-					"{B:1}{C:white}{s:0.7}{E:1}Art: ???",
-					"{B:1}{C:white}{s:0.7}{E:1}Idea: InfamousInvictis"
 				},
 			},
+                    "{C:attention}Polychrome{} {C:attention}Card/Joker{} activates",
+                    "{B:1,C:white,s:0.75,E:1}Code: MiniTigra",
+                    "{B:1,C:white,s:0.75,E:1}Art: Thunderbear",
+                    "{B:1,C:white,s:0.75,E:1}Idea: InfamousInvictis"
+            j_flor_mighty_manatee = {
+                    "{C:attention}Polychrome{} cards and {C:attention}Jokers{}",
+                    "{B:1,C:white,s:0.75,E:1}Code: MiniTigra",
+                    "{B:1,C:white,s:0.75,E:1}Art: Thunderbear",
+                    "{B:1,C:white,s:0.75,E:1}Idea: InfamousInvictis"
 		}
 	}
 }

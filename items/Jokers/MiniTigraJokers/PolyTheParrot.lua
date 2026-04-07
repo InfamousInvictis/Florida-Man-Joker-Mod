@@ -25,43 +25,34 @@ local PolyTheParrot = {
     eternal_compat = true,
     perishable_compat = true,
   
-    loc_vars = function(self,info_queue,card)
-        local poly_count = 0
-        if G.jokers then
-            for _, j in ipairs(G.jokers.cards) do
-                if j.edition and j.edition.polychrome then poly_count = poly_count + 1 end
-            end
-        end
-        return {
-            vars = { card.ability.extra.mult, (card.ability.extra.mult * poly_count) },
-            main_col = G.C.DARK_EDITION
-        }
+    loc_vars = function(self, info_queue, card)
+        return {vars = { 
+            card.ability.extra.mult, 
+            colours = {G.C.DARK_EDITION} 
+        }}
     end,
 
-    calculate = function(self,card,context)
-        if context.joker_main then
-
-            local poly_count = 0
-
-            for _, joker in ipairs(G.jokers.cards) do
-                if joker.edition and joker.edition.polychrome then
-                    poly_count = poly_count + 1
-                end
-            end
-
-            if context.scoring_hand then
-                for _, scoringcard in ipairs(context.scoring_hand) do
-                    if scoringcard.edition and scoringcard.edition.polychrome then
-                        poly_count = poly_count + 1
-                    end
-                end
-            end
-
-            if poly_count > 0 then
-                local total_mult = card.ability.extra.mult * poly_count
+    calculate = function(self, card, context)
+        if context.individual and context.cardarea == G.play then
+            if context.other_card.edition and context.other_card.edition.polychrome then
                 return {
-                    mult_mod = total_mult,
-                    message = '+' .. total_mult .. ' Mult',
+                    mult = card.ability.extra.mult,
+                    card = card
+                }
+            end
+        end
+
+        if context.joker_main then
+            local poly_jokers = 0
+            for _, joker in ipairs(G.jokers.cards) do
+                if joker.edition and joker.edition.polychrome and joker ~= card then
+                    poly_jokers = poly_jokers + 1
+                end
+            end
+            if poly_jokers > 0 then
+                return {
+                    mult_mod = card.ability.extra.mult * poly_jokers,
+                    message = '+' .. (card.ability.extra.mult * poly_jokers) .. ' Mult',
                     card = card
                 }
             end
