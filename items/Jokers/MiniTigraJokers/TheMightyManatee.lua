@@ -11,7 +11,7 @@ local TheMightyManatee = {
     key = 'mighty_manatee', 
     config = { extra = { mult = 1.3334 } },
     rarity = 3,
-	pos = { x = 0, y = 0 },
+    pos = { x = 0, y = 0 },
     soul_pos = { x = 0, y = 1 },
     atlas = 'manatee_atlas',
     cost = 8,
