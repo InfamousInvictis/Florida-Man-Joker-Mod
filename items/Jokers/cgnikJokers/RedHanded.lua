@@ -57,7 +57,7 @@ local RedHanded = {
                                 return true
                             end
                         }))
-                        SMODS.calculate_effect({message="Red Handed!",colour = G.C.SUITS.Hearts}, othercard)
+                        SMODS.calculate_effect({message="<3",colour = G.C.SUITS.Hearts}, othercard)
                         G.E_MANAGER:add_event(Event({
                             trigger = 'after',
                             delay = 0.15,
@@ -91,7 +91,7 @@ local RedHanded = {
                                 return true
                             end
                         }))
-                        SMODS.calculate_effect({message="Red Handed!",colour = G.C.SUITS.Diamonds}, othercard)
+                        SMODS.calculate_effect({message="Shine On!",colour = G.C.SUITS.Diamonds}, othercard)
                         G.E_MANAGER:add_event(Event({
                             trigger = 'after',
                             delay = 0.15,
