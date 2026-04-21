@@ -4,7 +4,7 @@ return {
 			j_flor_jawsome = {
 				name = 'Jaw-some',
 				text = {
-					"When a {C:attention}Blind is {C:attention}skipped{}, an {C:dark_edition}Edition{}",
+					"When a {C:attention}Blind is {C:attention}skipped{}, a {C:attention}random{} {C:dark_edition}Edition{}",
 					"is applied to a {C:attention}random Joker{}",
 				}
 			},
@@ -125,8 +125,9 @@ return {
 			j_flor_mugshot = {
 				name = "Mugshot",
 			    text = {
-					"Playing a {C:attention}face card{} debuffs",
+					"Scoring a {C:attention}face card{} debuffs",
 					"it for {C:attention}#2#-#3#{} rounds",
+					"and gives {C:money}+$#1#{} per {C:attention}round{}"
 					"Gain {C:money}$#1#{} per {C:attention}round",
 					"{C:inactive}(Currently {C:money}$#4#{C:inactive})",
 				    "{s:0.5} {}",
@@ -163,8 +164,8 @@ return {
 			j_flor_wilson = {
 				name = "Wilson!",
 			    text = {
-					"{C:mult}Multed{} Face Cards give {C:attention}double",
-					"the {C:mult}Mult{} value",
+					"{C:attention}Face Cards{} that give any form of {C:mult}Mult{}",
+					"give doubled {C:mult}Mult{}",
 				    "{s:0.5} {}",
 				    "{B:1,C:white,s:0.75,E:1}Code: RattlingSnow",
 				    "{B:1,C:white,s:0.75,E:1}Art: Raumfist",
