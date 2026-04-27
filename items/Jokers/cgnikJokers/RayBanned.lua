@@ -15,7 +15,8 @@ local RayBanned = {
             scaling = 0.1,
             mult = 1,
             poker_hands = {},
-            poker_hands_formatted = ""
+            poker_hands_formatted = "",
+            num = 1;
         }
     },
     rarity = 1,
@@ -57,7 +58,7 @@ local RayBanned = {
                                 return true
                             end
                         }))
-                        SMODS.calculate_effect({message="Ray Banned!",colour = G.C.SUITS.Spades}, othercard)
+                        SMODS.calculate_effect({message="Motör'd!",colour = G.C.SUITS.Spades}, othercard)
                         G.E_MANAGER:add_event(Event({
                             trigger = 'after',
                             delay = 0.15,
@@ -91,7 +92,7 @@ local RayBanned = {
                                 return true
                             end
                         }))
-                        SMODS.calculate_effect({message="Ray Banned!",colour = G.C.SUITS.Clubs}, othercard)
+                        SMODS.calculate_effect({message="Get Tipsy!",colour = G.C.SUITS.Clubs}, othercard)
                         G.E_MANAGER:add_event(Event({
                             trigger = 'after',
                             delay = 0.15,
