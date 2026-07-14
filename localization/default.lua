@@ -193,6 +193,18 @@ return {
                     "{B:1,C:white,s:0.75,E:1}Idea: InfamousInvictis"
                 },
             },
+			j_flor_Cat5Hurricane = {
+				name = "Category 5 Hurricane",
+				text = {
+					"Each played {C:dark_edition}Polychrome{} card",
+					"gives {C:mult}+#1#{} Mult when scored.",
+					"Each other {C:dark_edition}Polychrome{} Joker",
+					"gives {C:mult}+#1#{} Mult.",
+					"{C:white}Code: MiniTigra{}",
+					"{C:white}Art: InfamousInvictis{}",
+					"{C:white}Idea: InfamousInvictis{}"
+				},
+			},
 		}
 	}
 }
