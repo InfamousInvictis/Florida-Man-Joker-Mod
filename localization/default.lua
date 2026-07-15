@@ -49,7 +49,7 @@ return {
 						"be converted into {C:hearts}Hearts{} and {C:diamonds}Diamonds{} respectively",
 				        "{s:0.5} {}",
 				        "{B:1,C:white,s:0.75,E:1}Code: CGNik",
-				        "{B:1,C:white,s:0.75,E:1}Art: -----",
+				        "{B:1,C:white,s:0.75,E:1}Art: InfamousInvictis",
 				        "{B:1,C:white,s:0.75,E:1}Idea: InfamousInvictis"
 			        },
 			},
