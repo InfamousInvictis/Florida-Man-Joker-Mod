@@ -1,8 +1,8 @@
 local RedHanded_atlas = {
 	object_type = "Atlas",
-	key = "FloridaJawsome",
-	path = "jawsome.png",
-	px = 71, 
+	key = "RedHanded_atlas",
+	path = "RedHanded.png",
+	px = 71,
 	py = 95
 }
 
@@ -16,7 +16,7 @@ local RedHanded = {
         }
     },
     rarity = 2,
-    --atlas = 'FloridaJawsome',
+    atlas = 'RedHanded_atlas',
 	pos = { x = 0, y = 0 },
     cost = 6,
     unlocked = true,
@@ -112,4 +112,4 @@ local RedHanded = {
         end
     end
 }
-return { name = {"Jokers"}, items = {RedHanded} }
+return { name = {"Jokers"}, items = {RedHanded_atlas, RedHanded} }
