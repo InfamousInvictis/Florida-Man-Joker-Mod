@@ -28,14 +28,14 @@ return {
 				        "{s:0.5} {}",
 				        "{B:1,C:white,s:0.75,E:1}Code: CGNik",
 				        "{B:1,C:white,s:0.75,E:1}Art: Thunderbear",
-			            	"{B:1,C:white,s:0.75,E:1}Idea: InfamousInvictis"
+						"{B:1,C:white,s:0.75,E:1}Idea: InfamousInvictis"
 			        },
 			},
 			j_flor_RayBanned = {
 				name = "Ray Banned",
 			        text = {
-				        "Played {C:hearts}Hearts{} and {C:diamonds}Diamonds{} turn into",
-				        "{C:spades}Spades{} and {C:clubs}Clubs{} respectively",
+				        "Played {C:hearts}Hearts{} and {C:diamonds}Diamonds{} have a {C:green}#1#{} in {C:green}#2#{} chance to",
+						"be converted into {C:spades}Spades{} and {C:clubs}Clubs{} respectively",
 				        "{s:0.5} {}",
 				        "{B:1,C:white,s:0.75,E:1}Code: CGNik",
 				        "{B:1,C:white,s:0.75,E:1}Art: Thunderbear",
@@ -45,11 +45,11 @@ return {
 			j_flor_RedHanded = {
 				name = "Red Handed",
 			        text = {
-				        "Played {C:spades}Spades{} and {C:clubs}Clubs{} turn into",
-				        "{C:hearts}Hearts{} and {C:diamonds}Diamonds{} respectively",
+				        "Played {C:spades}Spades{} and {C:clubs}Clubs{} have a {C:green}#1#{} in {C:green}#2#{} chance to",
+						"be converted into {C:hearts}Hearts{} and {C:diamonds}Diamonds{} respectively",
 				        "{s:0.5} {}",
 				        "{B:1,C:white,s:0.75,E:1}Code: CGNik",
-				        "{B:1,C:white,s:0.75,E:1}Art: -----",
+				        "{B:1,C:white,s:0.75,E:1}Art: InfamousInvictis",
 				        "{B:1,C:white,s:0.75,E:1}Idea: InfamousInvictis"
 			        },
 			},
@@ -127,7 +127,7 @@ return {
 			    text = {
 					"Scoring a {C:attention}face card{} debuffs",
 					"it for {C:attention}#2#-#3#{} rounds",
-					"and gives {C:money}+$#1#{} per {C:attention}round{}"
+					"and gives {C:money}+$#1#{} per {C:attention}round{}",
 					"Gain {C:money}$#1#{} per {C:attention}round",
 					"{C:inactive}(Currently {C:money}$#4#{C:inactive})",
 				    "{s:0.5} {}",
@@ -164,8 +164,8 @@ return {
 			j_flor_wilson = {
 				name = "Wilson!",
 			    text = {
-					"{C:attention}Face Cards{} that give any form of {C:mult}Mult{}",
-					"give doubled {C:mult}Mult{}",
+					"{C:attention}Face Cards{} that give any form of {C:mult}+Mult{}",
+					"give doubled {C:mult}+Mult{}",
 				    "{s:0.5} {}",
 				    "{B:1,C:white,s:0.75,E:1}Code: RattlingSnow",
 				    "{B:1,C:white,s:0.75,E:1}Art: Raumfist",
