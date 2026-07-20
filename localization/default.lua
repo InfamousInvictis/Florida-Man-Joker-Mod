@@ -194,15 +194,63 @@ return {
                 },
             },
 			j_flor_Cat5Hurricane = {
-				name = "Category 5 Hurricane",
+				name = "Category 5",
 				text = {
-					"Each played {C:dark_edition}Polychrome{} card",
-					"gives {C:mult}+#1#{} Mult when scored.",
-					"Each other {C:dark_edition}Polychrome{} Joker",
-					"gives {C:mult}+#1#{} Mult.",
-					"{C:white}Code: MiniTigra{}",
-					"{C:white}Art: InfamousInvictis{}",
-					"{C:white}Idea: InfamousInvictis{}"
+					"This Joker permanently gains {C:mult}X#1#{} Mult",
+					"whenever the played hand contains a {C:attention}Full House{}.",
+					"Destroys all played cards.",
+					"{C:inactive}(Currently {C:mult}X#2#{C:inactive} Mult){}",
+					"{s:0.5} {}",
+					"{B:1,C:white,s:0.75,E:1}Code: MiniTigra",
+					"{B:1,C:white,s:0.75,E:1}Art: InfamousInvictis",
+					"{B:1,C:white,s:0.75,E:1}Idea: InfamousInvictis"
+				},
+			},
+			j_flor_SquareGrouper = {
+				name = "Square Grouper",
+				text = {
+					"This Joker gains {C:mult}+4 Mult{} if",
+					"played hand has exactly {C:attention}4{} cards.",
+					"{s:0.5} {}",
+					"{B:1,C:white,s:0.75,E:1}Code: MiniTigra",
+					"{B:1,C:white,s:0.75,E:1}Art: Thunderbear",
+					"{B:1,C:white,s:0.75,E:1}Idea: Kirbo"
+				},
+			},
+			j_flor_InvestInGator = {
+				name = "Invest-in-Gator",
+				text = {
+					"Purchasing {C:attention}Vouchers{} gives",
+					"a free copy of the {C:attention}Investment Tag{}.",
+					"{s:0.5} {}",
+					"{B:1,C:white,s:0.75,E:1}Code: MiniTigra",
+					"{B:1,C:white,s:0.75,E:1}Art: Raumfist",
+					"{B:1,C:white,s:0.75,E:1}Idea: InfamousInvictis"
+				},
+			},
+			j_flor_BloodOrange = {
+				name = "Blood Orange",
+				text = {
+					"If {C:attention}High Contrast Cards{} is enabled,",
+					"all {C:diamonds}Diamond{} cards have a",
+					"{C:green}#1# in #2#{} chance to permanently",
+					"gain a {C:red}Red Seal{} when played and scored.",
+					"{s:0.5} {}",
+					"{B:1,C:white,s:0.75,E:1}Code: MiniTigra",
+					"{B:1,C:white,s:0.75,E:1}Art: Thunderbear",
+					"{B:1,C:white,s:0.75,E:1}Idea: InfamousInvictis"
+				},
+			},
+			j_flor_SpringBreakers = {
+				name = "Spring Breakers",
+				text = {
+					"{C:attention}Glass Cards{} have a {C:green}#1# in #2#{} chance",
+					"to be shattered when played and scored.",
+					"Lose {C:money}$#3#{} if they break.",
+					"{s:0.5} {}",
+					"{B:1,C:white,s:0.75,E:1}Code: MiniTigra",
+					"{B:1,C:white,s:0.75,E:1}Art: Thunderbear",
+					"{B:1,C:white,s:0.75,E:1}Idea: InfamousInvictis"
 				},
 			},
 		}
