@@ -34,6 +34,7 @@ local BloodOrange = {
                 if context.other_card.seal ~= 'Red' then
                     
                     if pseudorandom('blood_orange') < G.GAME.probabilities.normal / card.ability.extra.chance then
+                        
                         local target_card = context.other_card
                         
                         G.E_MANAGER:add_event(Event({
