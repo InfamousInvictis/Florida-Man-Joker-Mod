@@ -7,13 +7,13 @@ local Cat5Hurricane_atlas = {
 
 local Cat5Hurricane = {
     object_type = "Joker",
-    order = 5,
+    order = 46,
     key = "Cat5Hurricane",
-    config = { extra = { mult = 7 } },
-    rarity = 2,
+    config = { extra = { x_mult = 1.0, x_mult_gain = 0.5 } },
+    rarity = 3,
     atlas = 'cat5_atlas',
     pos = { x = 0, y = 0 },
-    cost = 6,
+    cost = 8,
     unlocked = true,
     discovered = false,
     blueprint_compat = true,
@@ -21,34 +21,36 @@ local Cat5Hurricane = {
     perishable_compat = true,
   
     loc_vars = function(self, info_queue, card)
-        return {vars = { 
-            card.ability.extra.mult
-        }}
+        return { vars = { 
+            card.ability.extra.x_mult_gain,
+            card.ability.extra.x_mult,
+            colours = { G.C.DARK_EDITION }
+        } }
     end,
 
     calculate = function(self, card, context)
-        if context.individual and context.cardarea == G.play then
-            if context.other_card.edition and context.other_card.edition.polychrome then
+        if context.before and not context.blueprint then
+            if context.poker_hands and (next(context.poker_hands['Full House']) or next(context.poker_hands['Flush House'])) then
+                card.ability.extra.x_mult = card.ability.extra.x_mult + card.ability.extra.x_mult_gain
                 return {
-                    mult = card.ability.extra.mult,
+                    message = 'Upgraded!',
+                    colour = G.C.MULT,
                     card = card
                 }
             end
         end
 
-        if context.joker_main then
-            local poly_jokers = 0
-            for _, joker in ipairs(G.jokers.cards) do
-                if joker.edition and joker.edition.polychrome and joker ~= card then
-                    poly_jokers = poly_jokers + 1
-                end
-            end
-            if poly_jokers > 0 then
-                return {
-                    mult_mod = card.ability.extra.mult * poly_jokers,
-                    message = '+' .. (card.ability.extra.mult * poly_jokers) .. ' Mult',
-                    card = card
-                }
+        if context.joker_main and card.ability.extra.x_mult > 1.0 then
+            return {
+                Xmult_mod = card.ability.extra.x_mult,
+                message = 'X' .. card.ability.extra.x_mult .. ' Mult!',
+                card = card
+            }
+        end
+
+        if context.destroying_card and not context.blueprint then
+            if context.poker_hands and (next(context.poker_hands['Full House']) or next(context.poker_hands['Flush House'])) then
+                return true 
             end
         end
     end
