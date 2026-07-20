@@ -1,8 +1,8 @@
 local RayBanned_atlas = {
-	object_type = "Atlas", 
-	key = "RayBanned_atlas", 
-	path = "RayBanned.png", 
-	px = 71, 
+	object_type = "Atlas",
+	key = "RayBanned_atlas",
+	path = "RayBanned.png",
+	px = 71,
 	py = 95
 }
 
@@ -12,14 +12,10 @@ local RayBanned = {
     key = "RayBanned",
     config = { 
         extra = {
-            scaling = 0.1,
-            mult = 1,
-            poker_hands = {},
-            poker_hands_formatted = "",
-            num = 1;
+            odds = 4
         }
     },
-    rarity = 1,
+    rarity = 2,
     atlas = 'RayBanned_atlas',
 	pos = { x = 0, y = 0 },
     cost = 6,
@@ -30,13 +26,19 @@ local RayBanned = {
     perishable_compat = true,
   
     loc_vars = function(self,info_queue,card)
+        local num,denom = SMODS.get_probability_vars(card, 1, card.ability.extra.odds)
         return {vars = {
+            num, denom,
             colours={G.C.DARK_EDITION}
         }}
     end,
 
     calculate = function(self,card,context)
         if context.individual and context.cardarea == G.play and not context.blueprint then
+            if not SMODS.pseudorandom_probability(card, "flor_RayBanned", 1, card.ability.extra.odds) then
+                return
+            end
+
             local othercard = context.other_card
             if othercard:is_suit("Hearts") then
                 return {
@@ -54,7 +56,7 @@ local RayBanned = {
                             trigger = 'after',
                             delay = 0.1,
                             func = function()
-                                SMODS.change_base(othercard, "Spades")
+                                assert(SMODS.change_base(othercard, "Spades"))
                                 return true
                             end
                         }))
@@ -88,7 +90,7 @@ local RayBanned = {
                             trigger = 'after',
                             delay = 0.1,
                             func = function()
-                                SMODS.change_base(othercard, "Clubs")
+                                assert(SMODS.change_base(othercard, "Clubs"))
                                 return true
                             end
                         }))

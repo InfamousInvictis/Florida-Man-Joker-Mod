@@ -38,7 +38,7 @@ local ToeJimbo = {
             local requirement = G.GAME.blind.chips
             if chipsThisHand > requirement then
                 return {
-                    dollars = 10
+                    dollars = card.ability.extra.dollars
                 }
             end
         end
