@@ -73,37 +73,3 @@ end)
 for _, curr_obj in ipairs(objects) do
     load_items(curr_obj)
 end
-
-local upd = Game.update
-local flor_cat5_dt = 0
-
-local upd = Game.update
-local flor_cat5_dt = 0
-
-local upd = Game.update
-local flor_cat5_dt = 0
-
-function Game:update(dt)
-    upd(self, dt)
-    
-    if G.P_CENTERS and G.P_CENTERS.j_flor_Cat5Hurricane then
-        flor_cat5_dt = flor_cat5_dt + dt
-        
-        if flor_cat5_dt > 0.1 then 
-            flor_cat5_dt = 0
-            local cat5obj = G.P_CENTERS.j_flor_Cat5Hurricane
-            
-            if cat5obj.pos.x < 4 then 
-                cat5obj.pos.x = cat5obj.pos.x + 1
-            else
-                cat5obj.pos.x = 0
-                
-                if cat5obj.pos.y < 11 then 
-                    cat5obj.pos.y = cat5obj.pos.y + 1
-                else
-                    cat5obj.pos.y = 0
-                end
-            end
-        end
-    end
-end

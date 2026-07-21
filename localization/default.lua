@@ -210,8 +210,9 @@ return {
 			j_flor_SquareGrouper = {
 				name = "Square Grouper",
 				text = {
-					"This Joker gains {C:mult}+4 Mult{} if",
-					"played hand has exactly {C:attention}4{} cards.",
+					"This Joker gains {C:mult}+#1#{} Mult if",
+					"played hand has exactly {C:attention}#2#{} cards.",
+					"{C:inactive}(Currently {C:mult}+#3#{C:inactive} Mult){}",
 					"{s:0.5} {}",
 					"{B:1,C:white,s:0.75,E:1}Code: MiniTigra",
 					"{B:1,C:white,s:0.75,E:1}Art: Thunderbear",
