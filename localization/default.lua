@@ -255,6 +255,24 @@ return {
 					"{B:1,C:white,s:0.75,E:1}Idea: InfamousInvictis"
 				},
 			},
+            j_flor_TheConchRepublic = {
+				name = "The Conch Republic",
+				text = {
+                    "When a card is discarded,",
+					"this Joker gains {C:mult}+#1#{} Mult and",
+					"has a {C:green}#3# in #4#{} chance to {C:attention}secede",
+                    "{C:inactive}(Currently {C:mult}+#2#{}{C:inactive} Mult)",
+					"{s:0.5} {}",
+					"{B:1,C:white,s:0.75,E:1}Code: Sophiedeergirl",
+					"{B:1,C:white,s:0.75,E:1}Art: ThunderBear",
+					"{B:1,C:white,s:0.75,E:1}Idea: Kirbo, InfamousInvictis"
+				},
+			},
 		}
-	}
+	},
+    misc = {
+        dictionary = {
+            k_secede_ex = "Seceded!"
+        }
+    }
 }
