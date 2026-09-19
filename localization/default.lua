@@ -308,6 +308,44 @@ return {
 					"{B:1,C:white,s:0.75,E:1}Idea: InfamousInvictis"
 				},
 			},
+            j_flor_GatorAid = {
+				name = "Gator Aid",
+				text = {
+                    "{X:mult,C:white} X#1# {} Mult if played hand",
+                    "contains a {C:attention}debuffed{} card",
+					"{s:0.5} {}",
+					"{B:1,C:white,s:0.75,E:1}Code: Sophiedeergirl",
+					"{B:1,C:white,s:0.75,E:1}Art: ThunderBear",
+					"{B:1,C:white,s:0.75,E:1}Idea: InfamousInvictis"
+				},
+			},
+            j_flor_RockADile = {
+				name = "Rock-A-Dile",
+				text = {
+                    "This Joker gains {X:mult,C:white} X#2# {} Mult",
+                    "if played hand contains a {C:attention}Stone{} card,",
+                    "destroys played Stone cards",
+                    "{C:inactive}(Currently {X:mult,C:white} X#1# {C:inactive} Mult)",
+					"{s:0.5} {}",
+					"{B:1,C:white,s:0.75,E:1}Code: Sophiedeergirl",
+					"{B:1,C:white,s:0.75,E:1}Art: ThunderBear",
+					"{B:1,C:white,s:0.75,E:1}Idea: InfamousInvictis"
+				},
+			},
+            j_flor_Margaritaville = {
+				name = "Margaritaville",
+				text = {
+                    "This Joker gains {C:blue}+#2#{} Chips",
+                    "after using a {C:attention}Consumable,",
+                    "{C:money}selling{} any Consumable",
+                    "{C:attention}resets{} this Joker",
+                    "{C:inactive}(Currently {C:blue}+#1#{C:inactive} Chips)",
+					"{s:0.5} {}",
+					"{B:1,C:white,s:0.75,E:1}Code: Sophiedeergirl",
+					"{B:1,C:white,s:0.75,E:1}Art: InfamousInvictis",
+					"{B:1,C:white,s:0.75,E:1}Idea: InfamousInvictis"
+				},
+			},
 		}
 	},
     misc = {
