@@ -346,6 +346,33 @@ return {
 					"{B:1,C:white,s:0.75,E:1}Idea: InfamousInvictis"
 				},
 			},
+            j_flor_TurtleEggs = {
+				name = "Turtle Eggs",
+				text = {
+                    "After {C:attention}#1#{} rounds,",
+                    "sell this Joker",
+                    "to recieve two",
+                    "copies of {C:attention}Egg",
+                    "{C:inactive}(Currently {C:attention}#2#{C:inactive}/#1#)",
+					"{s:0.5} {}",
+					"{B:1,C:white,s:0.75,E:1}Code: Sophiedeergirl",
+					"{B:1,C:white,s:0.75,E:1}Art: InfamousInvictis",
+					"{B:1,C:white,s:0.75,E:1}Idea: InfamousInvictis"
+				},
+			},
+            j_flor_ClownCar = {
+				name = "Clown Car",
+				text = {
+                    "This Joker gains {X:mult,C:white} X#2# {} Mult",
+                    "when a Joker is sold",
+                    "{C:inactive}(All Jokers sell for {C:money}$0{C:inactive})",
+                    "{C:inactive}(Currently {X:mult,C:white} X#1# {C:inactive} Mult)",
+					"{s:0.5} {}",
+					"{B:1,C:white,s:0.75,E:1}Code: Sophiedeergirl",
+					"{B:1,C:white,s:0.75,E:1}Art: InfamousInvictis",
+					"{B:1,C:white,s:0.75,E:1}Idea: InfamousInvictis"
+				},
+			},
 		}
 	},
     misc = {
