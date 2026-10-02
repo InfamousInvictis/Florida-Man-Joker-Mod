@@ -373,6 +373,16 @@ return {
 					"{B:1,C:white,s:0.75,E:1}Idea: InfamousInvictis"
 				},
 			},
+			j_flor_Fore! = {
+				name = "Fore!",
+				text = {
+                    "Gains {X:mult,C:white}X#1#{} Mult if",
+					"exactly {C:attention}#2#{} hands played",
+					"Par changes every round",
+                    "{C:inactive}Currently {C:blue}#3#{C:inactive}/#2#, {}{X:mult,C:white}X#4#"
+					"{B:1,C:white,s:0.75,E:1}Code: Canicao",
+					"{B:1,C:white,s:0.75,E:1}Art: InfamousInvictis",
+					"{B:1,C:white,s:0.75,E:1}Idea: InfamousInvictis"
 		}
 	},
     misc = {
