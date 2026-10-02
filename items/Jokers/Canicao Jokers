@@ -1,4 +1,4 @@
-atlas = "Fore!",
+   atlas = "Fore!",
    pos = { x = 0, y = 3 },
    rarity = 3,
    cost = 4,
@@ -8,7 +8,7 @@ atlas = "Fore!",
       x_mult = 1,
       hands_played = 0,
       hands_required = 4
-   } },
+   }},
    loc_vars = function(self, info_queue, card)
       return { vars = { card.ability.extra.x_mult_mod, card.ability.extra.hands_required, card.ability.extra.hands_played, card.ability.extra.x_mult } }
    end,
@@ -54,3 +54,5 @@ atlas = "Fore!",
       end
    end
 }
+
+return { name = {"Jokers"}, items = {Fore!_atlas, Fore!} }
