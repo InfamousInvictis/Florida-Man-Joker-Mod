@@ -373,7 +373,7 @@ return {
 					"{B:1,C:white,s:0.75,E:1}Idea: InfamousInvictis"
 				},
 			},
-			j_flor_Fore! = {
+			j_flor_fore = {
 				name = "Fore!",
 				text = {
                     "Gains {X:mult,C:white}X#1#{} Mult if",
