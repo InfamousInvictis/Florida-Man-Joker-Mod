@@ -1,4 +1,4 @@
-   atlas = "Fore!",
+   atlas = "fore",
    pos = { x = 0, y = 3 },
    rarity = 3,
    cost = 4,
@@ -14,7 +14,7 @@
    end,
    pools = {["Fore!"] = true},
    calculate = function(self, card, context)
-      if context.Fore!_main then
+      if context.fore_main then
          return {
             Xmult = card.ability.extra.x_mult
          }
@@ -55,4 +55,4 @@
    end
 }
 
-return { name = {"Jokers"}, items = {Fore!_atlas, Fore!} }
+return { name = {"Jokers"}, items = {fore_atlas, fore} }
