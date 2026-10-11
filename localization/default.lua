@@ -383,6 +383,8 @@ return {
 					"{B:1,C:white,s:0.75,E:1}Code: Canicao",
 					"{B:1,C:white,s:0.75,E:1}Art: InfamousInvictis",
 					"{B:1,C:white,s:0.75,E:1}Idea: InfamousInvictis"
+				}
+			}
 		}
 	},
     misc = {
