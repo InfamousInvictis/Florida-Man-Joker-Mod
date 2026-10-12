@@ -25,8 +25,9 @@ local foreJoker = {
             card.ability.extra.x_mult_mod, 
             card.ability.extra.hands_required, 
             card.ability.extra.hands_played, 
-            card.ability.extra.x_mult },
-         colours = { G.C.DARK_EDITION }
+            card.ability.extra.x_mult,
+            colours = { G.C.DARK_EDITION }
+         }
       }
    end,
    --pools = {["Fore!"] = true},
