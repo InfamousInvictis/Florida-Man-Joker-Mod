@@ -106,7 +106,6 @@ local foreJoker = {
                colour = G.C.ORANGE,
                card = card
                }
-            end
          end
       end
    end
