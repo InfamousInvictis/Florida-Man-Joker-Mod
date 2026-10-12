@@ -71,7 +71,7 @@ local foreJoker = {
 
          if card.config.center.atlas ~= new_atlas then
             card.config.center.atlas = new_atlas
-            card:set_sprites(nil, card.config.center)
+            card:set_sprites(card.config.center, card.config.front)
          end
 
          return {
@@ -93,7 +93,7 @@ local foreJoker = {
          card.ability.extra.hands_required = pseudorandom("fore", 2, 5)
 
          card.config.center.atlas = 'fore_1'
-         card:set_sprites(nil, card.config.center)
+         card:set_sprites(card.config.center, card.config.front)
 
          if success then
             return {
