@@ -29,7 +29,7 @@ local foreJoker = {
    end,
    --pools = {["Fore!"] = true},
    calculate = function(self, card, context)
-      if context.fore_main then
+      if context.joker_main and card.ability.extra.x_mult > 1 then
          return {
             Xmult_mod = card.ability.extra.x_mult,
             message = 'X' .. card.ability.extra.x_mult .. ' Mult!',
@@ -41,45 +41,73 @@ local foreJoker = {
       if context.before and not context.blueprint then
          card.ability.extra.hands_played = card.ability.extra.hands_played + 1
          local msg = ''
-         colour = G.C.WHITE
+         local col = G.C.WHITE
          local new_atlas = 'fore_1'
          
          if card.ability.extra.hands_played + 1 < card.ability.extra.hands_required then return {
             message = 'On the Fairway!',
-            colour = G.C.BLUE,
+            col = G.C.BLUE,
             new_atlas = 'fore_2'
          }
          elseif card.ability.extra.hands_played + 1 == card.ability.extra.hands_required then return {
             message = 'In the bunker!',
-            colour = G.C.GREEN,
+            col = G.C.GREEN,
             new_atlas = 'fore_3'
          }
          elseif card.ability.extra.hands_played == card.ability.extra.hands_required then return {
             message = 'On the Green!',
-            colour = G.C.GOLD,
+            col = G.C.GOLD,
             new_atlas = 'fore_4'
          }
          elseif card.ability.extra.hands_played > card.ability.extra.hands_required then return {
             message = 'Missed...',
-            colour = G.C.RED,
+            col = G.C.RED,
             new_atlas = 'fore_1'
          }
          end
+
+         if card.config.center.atlas ~= new_atlas then
+            card.config.center.atlas = new_atlas
+            card:set_sprites(nil, card.config.center)
+         end
+
+         return {
+            message = msg,
+               colour = col,
+               card = card
+         }
       end
-      if context.end_of_round and not context.blueprint then
+
+   
+      if context.end_of_round and not context.blueprint and not context.individual and not context.repetition then
+         local success = false
          if card.ability.extra.hands_played == card.ability.extra.hands_required then
             card.ability.extra.x_mult = card.ability.extra.x_mult + card.ability.extra.x_mult_mod
+            success = true
          end
+
          card.ability.extra.hands_played = 0
          card.ability.extra.hands_required = pseudorandom("fore", 2, 5)
-         if G.cardarea == G.jokers then
+
+         card.config.center.atlas = 'fore_1'
+         card:set_sprites(nil, card.config.center)
+
+         if success then
             return {
                message = "+X"..card.ability.extra.x_mult_mod,
-               colour = G.C.MULT
+               colour = G.C.MULT,
+               card = card
             }
+         else
+            return {
+               message = "Reset!",
+               colour = G.C.ORANGE,
+               card = card
+               }
+            end
          end
       end
    end
 }
 
-return { name = {"Jokers"}, items = {fore_atlas_1, fore_atlas_2, fore_atlas_3, fore_atlas_4, ForeJoker} }
+return { name = {"Jokers"}, items = {fore_atlas_1, fore_atlas_2, fore_atlas_3, fore_atlas_4, foreJoker} }
