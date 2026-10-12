@@ -5,7 +5,7 @@ local fore_atlas_4 = { object_type = "Atlas", key = "fore_4", path = "Green.png"
 
 local foreJoker = {
    object_type = "Joker",
-   key = "FloridaFore",
+   key = "fore",
    pos = { x = 0, y = 0 },
    atlas = "fore_1",
    order = 9,
