@@ -19,7 +19,7 @@ local GatorAid = {
     blueprint_compat = true,
     eternal_compat = true,
     perishable_compat = true,
-  
+    attributes = { 'croc', 'animal' },
     loc_vars = function(self, info_queue, card)
         return { vars = { 
             card.ability.extra.xmult,
@@ -29,12 +29,12 @@ local GatorAid = {
     calculate = function(self, card, context)
         if context.joker_main and card.ability.extra.xmult > 1 then
             for _, v in ipairs(context.full_hand) do
-				if v.debuff then
-					return {
+                if v.debuff then
+                    return {
                         xmult = card.ability.extra.xmult,
                     }
-				end
-			end
+                end
+            end
         end
     end
 }
