@@ -18,7 +18,7 @@ local TheMightyManatee = {
     unlocked = true,
     discovered = true,
     blueprint_compat = false,
-    attributes = { "animal" },
+
     loc_vars = function(self, info_queue, card)
         return {vars = { 
             2, 

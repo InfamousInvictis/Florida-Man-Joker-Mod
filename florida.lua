@@ -22,7 +22,6 @@ end
 
 assert(SMODS.load_file('Utils/functions.lua'))()
 assert(SMODS.load_file('Utils/draw.lua'))()
-assert(SMODS.load_file('Utils/attributes.lua'))()
 
 local files = {}
 collect_item_files(mod_path.."Items", "Items", files)

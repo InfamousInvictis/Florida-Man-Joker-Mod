@@ -19,7 +19,7 @@ local InvestInGator = {
     blueprint_compat = true,
     eternal_compat = true,
     perishable_compat = true,
-    attributes = { "croc", "animal" },
+  
     loc_vars = function(self, info_queue, card)
         return { vars = { 
             colours = { G.C.DARK_EDITION }

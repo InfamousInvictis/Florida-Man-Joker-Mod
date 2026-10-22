@@ -19,7 +19,7 @@ local Snowbirds = {
     blueprint_compat = true,
     eternal_compat = false,
     perishable_compat = false,
-    attributes = { "animal" },
+  
     loc_vars = function(self, info_queue, card)
         return { vars = { 
             card.ability.extra.mult_mod,
