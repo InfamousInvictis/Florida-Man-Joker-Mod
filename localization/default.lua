@@ -290,7 +290,7 @@ return {
                     "{s:0.8}Card changes every round",
 					"{s:0.5} {}",
 					"{B:1,C:white,s:0.75,E:1}Code: Sophiedeergirl",
-					"{B:1,C:white,s:0.75,E:1}Art: InfamousInvictis",
+					"{B:1,C:white,s:0.75,E:1}Art: ThunderBear",
 					"{B:1,C:white,s:0.75,E:1}Idea: InfamousInvictis"
 				},
 			},
@@ -304,7 +304,7 @@ return {
                     "{s:0.8}Card changes every round",
 					"{s:0.5} {}",
 					"{B:1,C:white,s:0.75,E:1}Code: Sophiedeergirl",
-					"{B:1,C:white,s:0.75,E:1}Art: InfamousInvictis",
+					"{B:1,C:white,s:0.75,E:1}Art: ThunderBear",
 					"{B:1,C:white,s:0.75,E:1}Idea: InfamousInvictis"
 				},
 			},
@@ -356,7 +356,7 @@ return {
                     "{C:inactive}(Currently {C:attention}#2#{C:inactive}/#1#)",
 					"{s:0.5} {}",
 					"{B:1,C:white,s:0.75,E:1}Code: Sophiedeergirl",
-					"{B:1,C:white,s:0.75,E:1}Art: InfamousInvictis",
+					"{B:1,C:white,s:0.75,E:1}Art: ThunderBear",
 					"{B:1,C:white,s:0.75,E:1}Idea: InfamousInvictis"
 				},
 			},
@@ -384,7 +384,67 @@ return {
 					"{B:1,C:white,s:0.75,E:1}Art: InfamousInvictis",
 					"{B:1,C:white,s:0.75,E:1}Idea: InfamousInvictis"
 				}
-			}
+			},
+            j_flor_AllyGator = {
+				name = "Ally-Gator",
+				text = {
+                    "{C:attention}Crocodille{} and {C:attention}Alligator",
+                    "themed Jokers each give",
+                    "{C:chips}+#1#{} Chips",
+					"{s:0.5} {}",
+					"{B:1,C:white,s:0.75,E:1}Code: Sophiedeergirl",
+					"{B:1,C:white,s:0.75,E:1}Art: gfsgfsgdsgf",
+					"{B:1,C:white,s:0.75,E:1}Idea: InfamousInvictis"
+				},
+			},
+            j_flor_DevilRave = {
+				name = "Devil Rave",
+				text = {
+                    "{C:dark_edition}Polychrome{} cards and",
+                    "Jokers give {X:mult,C:white} X#1# {} Mult",
+					"{s:0.5} {}",
+					"{B:1,C:white,s:0.75,E:1}Code: Sophiedeergirl",
+					"{B:1,C:white,s:0.75,E:1}Art: gfsgfsgdsgf",
+					"{B:1,C:white,s:0.75,E:1}Idea: InfamousInvictis & CGNik"
+				},
+			},
+            j_flor_Jimbo = {
+				name = "JIMBO",
+				text = {
+                    "Play {C:attention}#2#{} different",
+                    "hand types to get JIMBO!",
+                    "and earn {C:money}#3#{},",
+                    "then reset this Joker",
+                    "{C:inactive}(Currently {C:attention}#1#{C:inactive}/#2#)",
+					"{s:0.5} {}",
+					"{B:1,C:white,s:0.75,E:1}Code: Sophiedeergirl",
+					"{B:1,C:white,s:0.75,E:1}Art: ThunderBear",
+					"{B:1,C:white,s:0.75,E:1}Idea: InfamousInvictis"
+				},
+			},
+            j_flor_AceVentura = {
+				name = "Ace Ventura",
+				text = {
+                    "{C:attention}Animal{}-themed Jokers",
+                    "each give {X:mult,C:white}X#1#{} Mult",
+					"{s:0.5} {}",
+					"{B:1,C:white,s:0.75,E:1}Code: Sophiedeergirl",
+					"{B:1,C:white,s:0.75,E:1}Art: gfsgfsgdsgf",
+					"{B:1,C:white,s:0.75,E:1}Idea: InfamousInvictis"
+				},
+			},
+            j_flor_Sandcastle = {
+				name = "Sandcastle",
+				text = {
+                    "{X:mult,C:white}X#1#{} Mult, decreases by",
+                    "{X:mult,C:white}X#2#{} Mult after hand",
+                    "{s:0.8}rebuilt at {X:mult,C:white,s:0.8}X#3#{}{s:0.8} Mult",
+                    "{s:0.5} {}",
+					"{B:1,C:white,s:0.75,E:1}Code: Sophiedeergirl",
+					"{B:1,C:white,s:0.75,E:1}Art: ThunderBear",
+					"{B:1,C:white,s:0.75,E:1}Idea: InfamousInvictis"
+                }
+			},
 		}
 	},
     misc = {
