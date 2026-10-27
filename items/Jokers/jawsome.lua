@@ -21,7 +21,7 @@ local jawsome = {
     discovered = false,
     blueprint_compat = true,
     eternal_compat = true,
-  
+    attributes = { "animal" },
     loc_vars = function(self, info_queue, card)
 
     end,

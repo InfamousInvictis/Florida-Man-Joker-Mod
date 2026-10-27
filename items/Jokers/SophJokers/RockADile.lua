@@ -20,7 +20,7 @@ local RockADile = {
     eternal_compat = true,
     perishable_compat = false,
     enhancement_gate = 'm_stone',
-  
+    attributes = { 'croc', 'animal' },
     loc_vars = function(self, info_queue, card)
         return { vars = { 
             card.ability.extra.xmult,

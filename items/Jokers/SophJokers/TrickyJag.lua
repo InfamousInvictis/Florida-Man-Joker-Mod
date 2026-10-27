@@ -19,7 +19,7 @@ local TrickyJag = {
     blueprint_compat = true,
     eternal_compat = true,
     perishable_compat = true,
-  
+    attributes = { "animal" },
     loc_vars = function(self, info_queue, card)
         local jag_card = G.GAME.current_round.flor_jag_card or { rank = 'Ace', suit = 'Spades' }
         local key = card.ability.extra.active and 'j_flor_TrickyJag' or 'j_flor_TrickyJag_inactive'
@@ -36,14 +36,14 @@ local TrickyJag = {
                 xmult = card.ability.extra.xmult,
             }
         elseif context.discard then
-			if context.other_card:get_id() == G.GAME.current_round.flor_jag_card.id and context.other_card:is_suit(G.GAME.current_round.flor_jag_card.suit) then
+            if context.other_card:get_id() == G.GAME.current_round.flor_jag_card.id and context.other_card:is_suit(G.GAME.current_round.flor_jag_card.suit) then
                 card.ability.extra.active = true
-				return {
-					message = localize('k_flor_destroy_jag'),
-					colour = G.C.FILTER,
-					remove = true,
-				}
-			end
+                return {
+                    message = localize('k_flor_destroy_jag'),
+                    colour = G.C.FILTER,
+                    remove = true,
+                }
+            end
         elseif context.end_of_round then
             card.ability.extra.active = false
             return nil, true
